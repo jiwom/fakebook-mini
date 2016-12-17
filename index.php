@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+/*$servername = "localhost";
 $username   = "root";
 $password   = "";
 $dbname     = "eypbi";
@@ -16,7 +16,7 @@ if ($_POST) {
     die();
 }
 
-
+*/
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0020)http://fakebook.dev/ -->
