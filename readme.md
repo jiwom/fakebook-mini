@@ -4,7 +4,7 @@ Play around and deploy to your localhost to Phish your friends FB account.
 
 #Installation
 *   Git Clone https://github.com/jiwom/fakebook-mini.git
-*   Set your DB connection inside index.php located at the top of the page
+*   Set your DB connection inside db.php
 
 ##Execute this query to your machine
 
